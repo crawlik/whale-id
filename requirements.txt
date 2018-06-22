@@ -8,3 +8,5 @@ scikit-learn==0.19.1
 pillow
 kaggle
 opencv-python
+tensorflow
+whale-id

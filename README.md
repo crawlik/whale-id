@@ -4,25 +4,35 @@
 
 1. Clone the repository and navigate to the downloaded folder.
 
-```
+```bash
 git clone git@github.com:crawlik/whale-id.git
 cd whale-id
 ```
 
 2. Create and activate a new environment.
 
-```
+```bash
 conda create -y -n whale-id python=3.6
 source activate whale-id
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
-3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `quadcop` environment.
+3. Download the data
+
+You may need to install Kaggle API key.
+
+```bash
+kaggle competitions download -c whale-categorization-playground --wp
+unzip train.zip
+unzip test.zip
 ```
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `quadcop` environment.
+```bash
 python -m ipykernel install --user --name whale-id --display-name "whale-id"
 ```
 
-4. Open the notebook.
+5. Open the notebook.
 ```
 jupyter notebook whale-id.ipynb
 ```
