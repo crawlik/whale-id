@@ -3,4 +3,4 @@ test/
 train.csv
 train/
 data/
-whale.flukes.weights.best.hdf5
+whale.flukes.weights.best.hdf5*
