@@ -9,4 +9,4 @@ pillow
 kaggle
 opencv-python
 tensorflow
-whale-id
+seaborn
