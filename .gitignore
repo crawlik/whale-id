@@ -2,6 +2,8 @@
 test/
 train.csv
 train/
-data/
+data*/
 whale.flukes.weights.best.hdf5*
 predictions.csv
+*.npy
+*.hdf5
