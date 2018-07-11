@@ -15,6 +15,9 @@ cd whale-id
 conda create -y -n whale-id python=3.6
 source activate whale-id
 pip install -r requirements.txt
+# Optional: install optimized TF from https://github.com/lakshayg/tensorflow-build
+# 2.9 GHz Intel Core i7, OSX Sierra
+pip install --ignore-installed --upgrade "https://github.com/lakshayg/tensorflow-build/raw/master/tensorflow-1.8.0-cp36-cp36m-macosx_10_7_x86_64.whl"
 ```
 
 3. Download the data

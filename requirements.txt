@@ -10,3 +10,4 @@ kaggle
 opencv-python
 tensorflow
 livelossplot
+h5py
