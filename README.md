@@ -30,7 +30,7 @@ unzip train.zip
 unzip test.zip
 ```
 
-4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `quadcop` environment.
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `whale-id` environment.
 ```bash
 python -m ipykernel install --user --name whale-id --display-name "whale-id"
 ```
@@ -43,7 +43,10 @@ Running notebook remotely on a headless server.
 ```
 jupyter notebook --ip=0.0.0.0 --no-browser whale-id.ipynb
 ```
-
+Training logs to tensordboard and data can be viewed by
+```
+tensorboard --logdir=./logs/
+``` 
 
 5. Before running code, change the kernel to match the `quadcop` environment by using the drop-down menu (**Kernel > Change kernel > whale-id**). Then, follow the instructions in the notebook.
 
