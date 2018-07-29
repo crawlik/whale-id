@@ -11,3 +11,4 @@ opencv-python
 tensorflow-gpu==1.8.0
 livelossplot
 h5py
+keras-vis
