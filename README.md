@@ -60,7 +60,7 @@ jupyter notebook classify.ipynb
 jupyter notebook report.ipynb
 ```
 
-9. Run attention and CNN visualizatio
+9. Run attention and CNN visualization
 ```
 jupyter notebook attention.ipynb
 jupyter notebook keras-vis.ipynb
