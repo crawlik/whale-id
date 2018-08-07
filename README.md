@@ -35,19 +35,33 @@ unzip test.zip
 python -m ipykernel install --user --name whale-id --display-name "whale-id"
 ```
 
-5. Open the notebook.
+5. Open training notebook.
 ```
-jupyter notebook whale-id.ipynb
+jupyter notebook whale-id-all.ipynb
 ```
 Running notebook remotely on a headless server.
 ```
-jupyter notebook --ip=0.0.0.0 --no-browser whale-id.ipynb
+jupyter notebook --ip=0.0.0.0 --no-browser whale-id-all.ipynb
 ```
 Training logs to tensordboard and data can be viewed by
 ```
 tensorboard --logdir=./logs/
-``` 
+```
 
-5. Before running code, change the kernel to match the `quadcop` environment by using the drop-down menu (**Kernel > Change kernel > whale-id**). Then, follow the instructions in the notebook.
+6. Before running code, change the kernel to match the `whale-id` environment by using the drop-down menu (**Kernel > Change kernel > whale-id**). Then, follow the instructions in the notebook.
 
-6. You will likely need to install more pip packages to complete this project.  Please curate the list of packages needed to run your project in the `requirements.txt` file in the repository.
+7. Open classification notebook
+```
+jupyter notebook classify.ipynb
+```
+
+8. Generate report
+```
+jupyter notebook report.ipynb
+```
+
+9. Run attention and CNN visualizatio
+```
+jupyter notebook attention.ipynb
+jupyter notebook keras-vis.ipynb
+```
